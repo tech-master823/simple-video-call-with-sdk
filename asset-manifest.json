@@ -1,43 +1,15 @@
 {
   "files": {
     "main.css": "/simple-video-call-with-sdk/static/css/main.e6c13ad2.css",
-    "main.js": "/simple-video-call-with-sdk/static/js/main.f84f49d7.js",
-    "reactPlayerYouTube.js": "/simple-video-call-with-sdk/static/js/reactPlayerYouTube.05f73a08.chunk.js",
-    "reactPlayerSoundCloud.js": "/simple-video-call-with-sdk/static/js/reactPlayerSoundCloud.3b4c71f9.chunk.js",
-    "reactPlayerVimeo.js": "/simple-video-call-with-sdk/static/js/reactPlayerVimeo.d7dd4c02.chunk.js",
-    "reactPlayerMux.js": "/simple-video-call-with-sdk/static/js/reactPlayerMux.c22f25a9.chunk.js",
-    "reactPlayerFacebook.js": "/simple-video-call-with-sdk/static/js/reactPlayerFacebook.1b9a2426.chunk.js",
-    "reactPlayerStreamable.js": "/simple-video-call-with-sdk/static/js/reactPlayerStreamable.7981355f.chunk.js",
-    "reactPlayerWistia.js": "/simple-video-call-with-sdk/static/js/reactPlayerWistia.1c6f2f01.chunk.js",
-    "reactPlayerTwitch.js": "/simple-video-call-with-sdk/static/js/reactPlayerTwitch.705ec53d.chunk.js",
-    "reactPlayerDailyMotion.js": "/simple-video-call-with-sdk/static/js/reactPlayerDailyMotion.62f464fc.chunk.js",
-    "reactPlayerMixcloud.js": "/simple-video-call-with-sdk/static/js/reactPlayerMixcloud.5faee0cd.chunk.js",
-    "reactPlayerVidyard.js": "/simple-video-call-with-sdk/static/js/reactPlayerVidyard.9ce2aa02.chunk.js",
-    "reactPlayerKaltura.js": "/simple-video-call-with-sdk/static/js/reactPlayerKaltura.ee254bea.chunk.js",
-    "reactPlayerFilePlayer.js": "/simple-video-call-with-sdk/static/js/reactPlayerFilePlayer.9467cc7c.chunk.js",
-    "reactPlayerPreview.js": "/simple-video-call-with-sdk/static/js/reactPlayerPreview.3d8d8984.chunk.js",
+    "main.js": "/simple-video-call-with-sdk/static/js/main.e92db73c.js",
     "static/js/453.ed3810f9.chunk.js": "/simple-video-call-with-sdk/static/js/453.ed3810f9.chunk.js",
     "index.html": "/simple-video-call-with-sdk/index.html",
     "main.e6c13ad2.css.map": "/simple-video-call-with-sdk/static/css/main.e6c13ad2.css.map",
-    "main.f84f49d7.js.map": "/simple-video-call-with-sdk/static/js/main.f84f49d7.js.map",
-    "reactPlayerYouTube.05f73a08.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerYouTube.05f73a08.chunk.js.map",
-    "reactPlayerSoundCloud.3b4c71f9.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerSoundCloud.3b4c71f9.chunk.js.map",
-    "reactPlayerVimeo.d7dd4c02.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerVimeo.d7dd4c02.chunk.js.map",
-    "reactPlayerMux.c22f25a9.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerMux.c22f25a9.chunk.js.map",
-    "reactPlayerFacebook.1b9a2426.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerFacebook.1b9a2426.chunk.js.map",
-    "reactPlayerStreamable.7981355f.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerStreamable.7981355f.chunk.js.map",
-    "reactPlayerWistia.1c6f2f01.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerWistia.1c6f2f01.chunk.js.map",
-    "reactPlayerTwitch.705ec53d.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerTwitch.705ec53d.chunk.js.map",
-    "reactPlayerDailyMotion.62f464fc.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerDailyMotion.62f464fc.chunk.js.map",
-    "reactPlayerMixcloud.5faee0cd.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerMixcloud.5faee0cd.chunk.js.map",
-    "reactPlayerVidyard.9ce2aa02.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerVidyard.9ce2aa02.chunk.js.map",
-    "reactPlayerKaltura.ee254bea.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerKaltura.ee254bea.chunk.js.map",
-    "reactPlayerFilePlayer.9467cc7c.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerFilePlayer.9467cc7c.chunk.js.map",
-    "reactPlayerPreview.3d8d8984.chunk.js.map": "/simple-video-call-with-sdk/static/js/reactPlayerPreview.3d8d8984.chunk.js.map",
+    "main.e92db73c.js.map": "/simple-video-call-with-sdk/static/js/main.e92db73c.js.map",
     "453.ed3810f9.chunk.js.map": "/simple-video-call-with-sdk/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.f84f49d7.js"
+    "static/js/main.e92db73c.js"
   ]
 }
