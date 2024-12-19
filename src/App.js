@@ -10,6 +10,7 @@ import { use } from "react";
 
 function ParticipantView(props) {
   const micRef = useRef(null);
+  const videoRef = useRef(null);
   const { webcamStream, micStream, webcamOn, micOn, isLocal, displayName } =
     useParticipant(props.participantId);
 
@@ -39,25 +40,18 @@ function ParticipantView(props) {
     }
   }, [micStream, micOn]);
 
+  useEffect(() => {
+    if (webcamOn && webcamStream) {
+      const mediaStream = new MediaStream();
+      mediaStream.addTrack(webcamStream.track);
+      videoRef.current.srcObject = mediaStream;
+    }
+  }, [webcamStream, webcamOn])
+
   return (
     <div>
       <audio ref={micRef} autoPlay playsInline muted={isLocal} />
-      {webcamOn && (
-        <ReactPlayer
-          playsinline // very very imp prop
-          pip={false}
-          light={false}
-          controls={false}
-          muted={true}
-          playing={true}
-          url={videoStream}
-          height={"300px"}
-          width={"300px"}
-          onError={(err) => {
-            console.log(err, "participant video error");
-          }}
-        />
-      )}
+      <video ref={videoRef} autoPlay playsInline muted height={"300px"} width={"300px"} />
     </div>
   );
 }
@@ -91,7 +85,7 @@ function MeetingView() {
       ) : joined && joined == "JOINING" ? (
         <p>Joining the meeting...</p>
       ) : (
-        <button onClick={joinMeeting}>Join the meeting</button>
+        <button onClick={joinMeeting}>Join the meeting V2</button>
       )}
     </div>
   );
