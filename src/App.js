@@ -1,10 +1,12 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import {
+  createMicrophoneAudioTrack,
   MeetingProvider,
   useMeeting,
   useParticipant,
 } from "@videosdk.live/react-sdk";
 import ReactPlayer from "react-player";
+import { use } from "react";
 
 function ParticipantView(props) {
   const micRef = useRef(null);
@@ -95,6 +97,19 @@ function MeetingView() {
   );
 }
 const App = () => {
+  const [customAudioTrack, setCustomAudioTrack] = useState(null);
+  useEffect(() => {
+    createMicrophoneAudioTrack({
+      noiseConfig: {
+        echoCancellation: true,
+        noiseSuppression: true,
+        autoGainControl: true,
+      },
+      encoderConfig: "high_quality_stereo"
+    }).then((audioTrack) => {
+      setCustomAudioTrack(audioTrack);
+    });
+  }, []);
   return (
     <MeetingProvider
       config={{
@@ -102,6 +117,7 @@ const App = () => {
         micEnabled: true,
         webcamEnabled: true,
         name: "Carl's Org",
+        customMicrophoneAudioTrack: customAudioTrack,
       }}
       token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhcGlrZXkiOiI2YTI3NmNlZS03MmUyLTQxYjUtOTgwNC01YTM2OGQ0ODE4Y2MiLCJwZXJtaXNzaW9ucyI6WyJhbGxvd19qb2luIl0sImlhdCI6MTczNDYwODczMiwiZXhwIjoxNzM0Njk1MTMyfQ.kwhYMxP5onhgwJ6YCCNIcx-TWowA9DH5Uu_BYa1o3mk"
     >
