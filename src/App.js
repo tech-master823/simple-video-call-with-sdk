@@ -50,7 +50,7 @@ function ParticipantView(props) {
 
   return (
     <div>
-      <audio ref={micRef} autoPlay playsInline muted={isLocal} />
+      <audio ref={micRef} autoPlay playsInline muted={isLocal} controls={true} />
       <video ref={videoRef} autoPlay playsInline muted height={"300px"} width={"300px"} />
     </div>
   );
@@ -85,7 +85,7 @@ function MeetingView() {
       ) : joined && joined == "JOINING" ? (
         <p>Joining the meeting...</p>
       ) : (
-        <button onClick={joinMeeting}>Join the meeting V2</button>
+        <button onClick={joinMeeting}>Join the meeting V3</button>
       )}
     </div>
   );
